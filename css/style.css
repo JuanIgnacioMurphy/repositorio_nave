@@ -1,0 +1,105 @@
+/*Reseteo*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Fuentes*/
+
+@font-face {
+    font-family: 'Abril';
+    src: url(../assets/fonts/AbrilFatface-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+
+/*
+font-family: 'Abril', serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+/*
+Estilos báiscos
+*/
+
+/* * {
+    background-color: #0c181d;
+    color: #fffffa;
+}
+
+h1 {
+    font-family: 'Abril';
+    font-size: 80px;
+}
+
+h2 {
+    font-family: 'Poppins';
+    font-size: 24px;
+} */
+
+/* Estilos del Navbar */
+
+.contenedor-de-imagen {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-navbar {
+    height: 100%;
+}
+
+.navbar {
+    font-family: 'Abril';
+    font-size: 20px;
+    background-color: #88303e;
+    color: #fffffa;
+    border-bottom: 50px #0c181d;
+}
+
+.nav-link {
+    color: #fffffa;
+}
+
+body {
+    font-family: 'Poppins';
+    background-color: #0c181d;
+    color: #fffffa;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+.main-container__card {
+    padding: 20px;
+    border: #fffffa solid 2px;
+    background-color: #491a22;
+    width: 400px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container__card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.main-container__card a {
+    text-decoration: none;
+    background-color: #0c181d;
+    color: #fffffa;
+    padding: 10px;
+}
