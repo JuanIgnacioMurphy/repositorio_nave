@@ -78,7 +78,6 @@ main {
 
 h1 {
     font-family: "Abril";
-    background-color: #4a242e;
     color: #C9CEBD;
     font-size: 70px;
     align-self: center;
@@ -86,6 +85,10 @@ h1 {
     border: solid 2px #88303E;
     width: 80%;
     margin: 10px;
+}
+
+h1:hover {
+    background-color: #88303f7a;
 }
 
 /* Estilos del Hero Section */
@@ -312,11 +315,10 @@ h1 {
     justify-content: center;
 }
 
-
-
 /* Estilos del footer */
 
 footer {
+    margin-top: 60px;
     bottom: 0;
     width: 100%;
     background-color: #88303e;
@@ -331,4 +333,174 @@ footer {
     gap: 20px;
     padding: 40px;
     justify-content: space-around;
+}
+
+/* Estilos de la galería */
+
+.box {
+    width: 100%;
+    height: 100%;
+    max-height: 350px;
+    position: relative;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-radius: 8px;
+    border: 1px solid white;
+}
+
+.box h2 {
+    position: absolute;
+    align-self: flex-start;
+    font-family: 'Poppins';
+    color: #C9CEBD;
+    background-color: #88303E;
+    border-radius: 3px;
+    border: 2px solid transparent;
+    font-size: 30px;
+    padding: 5px;
+    margin: 10px;
+    
+}
+
+.box img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.box .btn-galery {
+    margin: 10px;
+    padding: 5px;
+    position: absolute;
+    /* width: 48%; */
+    justify-self: end;
+    align-self: flex-start;
+    background-color: transparent;
+    color: transparent;
+    border: 2px solid transparent;
+    font-family: 'Poppins';
+    font-size: 30px;
+}
+
+.b1 {
+    grid-area: a1;
+}
+
+.b2 {
+    grid-area: a2;
+}
+
+.b3 {
+    grid-area: a3;
+}
+
+.b4 {
+    grid-area: a4;
+}
+
+.b5 {
+    grid-area: a5;
+}
+
+.b6 {
+    grid-area: a6;
+}
+
+.b7 {
+    grid-area: a7;
+}
+
+.b8 {
+    grid-area: a8;
+}
+
+.b9 {
+    grid-area: a9;
+}
+
+.b10 {
+    grid-area: a10;
+}
+
+.b11 {
+    grid-area: a11;
+}
+
+.b12 {
+    grid-area: a12;
+}
+
+.grid {
+    border: 3px solid #88303E;
+    border-radius: 8px;
+    margin-top: 40px;
+    padding: 15px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 15px;
+    grid-template-areas:
+        'a1 a2 a3'
+        'a4 a5 a6'
+        'a7 a8 a9'
+        'a10 a11 a12';
+}
+
+.box:hover {
+    h2 {
+        color: transparent;
+        background-color: transparent;
+    }
+
+    .btn-galery {
+        margin: 10px;
+        padding: 5px;
+        position: absolute;
+        /* width: 48%; */
+        justify-self: end;
+        align-self: end;
+        background-color: #88303E;
+        border: 2px solid transparent;
+        color: #C9CEBD;
+        font-size: 30px;
+    }
+
+    .btn-galery:hover {
+        background-color: #0c181d;
+        color: #C9CEBD;
+        border: 2px solid #4a242e;
+    }
+
+}
+
+.goods-details {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.item-card {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    padding: 0;
+    margin: 0;
+    background-color: #4a242e9a;
+    border: 2px solid #88303E;
+    border-radius: 8px;
+    color: #C9CEBD;
+    text-align: center;
+    gap: 5px;
+}
+
+.item-card h2 {
+    font-weight: bold;
+    font-size: 28px;
+    justify-self:flex-start;
 }
