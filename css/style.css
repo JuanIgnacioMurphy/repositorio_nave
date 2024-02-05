@@ -22,24 +22,6 @@ font-family: 'Abril', serif;
 font-family: 'Poppins', sans-serif;
 */
 
-/*
-Estilos báiscos
-*/
-
-/* * {
-    background-color: #0c181d;
-    color: #fffffa;
-}
-
-h1 {
-    font-family: 'Abril';
-    font-size: 80px;
-}
-
-h2 {
-    font-family: 'Poppins';
-    font-size: 24px;
-} */
 
 /* Estilos del Navbar */
 
@@ -54,52 +36,299 @@ h2 {
     height: 100%;
 }
 
-.navbar {
-    font-family: 'Abril';
-    font-size: 20px;
-    background-color: #88303e;
-    color: #fffffa;
-    border-bottom: 50px #0c181d;
-}
-
-.nav-link {
-    color: #fffffa;
-}
 
 body {
     font-family: 'Poppins';
     background-color: #0c181d;
     color: #fffffa;
+    background-image: url(../assets/images/fondonave.jpg);
+    background-size: contain;
 }
 
-.main-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 10px;
-    justify-content: space-evenly;
+
+.bg-darkred {
+    background-color: #88303e;
+    color: #C9CEBD;
+    font-family: "Abril";
+    font-size: 24px;
+    border-bottom: 2px solid #0c181d;
 }
 
-.main-container__card {
-    padding: 20px;
-    border: #fffffa solid 2px;
-    background-color: #491a22;
-    width: 400px;
+.offcanvas-header {
+    background-color: #4a242e;
+    color: #0c181d;
+}
 
+.nav-link {
+    color: #C9CEBD;
+    border-bottom: 10px solid transparent;
+}
+
+.nav-link:hover {
+    border-bottom: 10px solid #0c181d;
+}
+
+/* Estilos del main */
+
+main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
-.main-container__card img {
+h1 {
+    font-family: "Abril";
+    background-color: #4a242e;
+    color: #C9CEBD;
+    font-size: 70px;
+    align-self: center;
+    text-align: center;
+    border: solid 2px #88303E;
+    width: 80%;
+    margin: 10px;
+}
+
+/* Estilos del Hero Section */
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos del Hero Card */
+
+.hero-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    height: auto;
+    padding: 10px;
+    margin-top: 40px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #C9CEBD;
+    border: 3px solid #88303E;
+    border-radius: 10px;
+}
+
+.carousel-item img {
+    border-radius: 10px;
+}
+
+.hero-carousel {
+    height: 100%;
+    width: 48%;
+}
+
+.hero-card:hover {
+    background-color: #0d25309f;
+}
+
+/* Estilos del Hero Bilboard */
+
+.hero-bilboard {
+    height: 100%;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 100px 20px 10px 80px;
+}
+
+.otoño-bilboard {
+    font-family: "abril";
+    color: #C9CEBD;
+    font-size: 110px;
+    margin-bottom: 0;
+    padding: 0;
+    line-height: 0.7;
+}
+
+.invierno-bilboard {
+    font-family: "abril";
+    color: #C9CEBD;
+    font-size: 91px;
+    margin-bottom: 0;
+    padding: 0;
+    line-height: 0.7;
+}
+
+.año-bilboard {
+    font-family: "abril";
+    color: #C9CEBD;
+    font-size: 120px;
+    margin-bottom: 0;
+    padding: 0;
+    line-height: 0.7;
+}
+
+.hero-bilboard p {
+    font-family: "poppins";
+    font-size: 25px;
+    color: #C9CEBD;
+    margin-top: 40px;
+    text-align: center
+}
+
+.btn-primary {
+    background-color: #88303E;
+    color: #C9CEBD;
+    font-size: 30px;
+    border-radius: 2px;
+    border: 2px solid transparent;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn:active {
+    background-color: #0c181d;
+    color: #C9CEBD;
+    border: 2px solid #4a242e;
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    background-color: #0c181d;
+    color: #C9CEBD;
+    border: 2px solid #4a242e;
+}
+
+/* Estilos del banner */
+
+.banner h2 {
+    font-family: "abril";
+    color: #C9CEBD;
+    font-size: 60px;
+    text-align: center;
+}
+
+/* Estilos del Sidekick */
+
+.sidekick {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 520px;
+    width: 320px;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: 2px solid #88303E;
+    color: #C9CEBD;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.card .btn-primary {
+    font-size: 20px;
+}
+
+.card img {
     width: 100%;
-    height: 300px;
+    height: 250px;
     object-fit: cover;
 }
 
-.main-container__card a {
-    text-decoration: none;
-    background-color: #0c181d;
+.card-title {
+    font-weight: bold;
+}
+
+.card:hover {
+    background-color: #0d25309f;
+}
+
+/* Estilos de los extras */
+
+.extras {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+}
+
+.poster {
+    display: flex;
+    margin: 20px 0;
+    width: 48%;
+}
+
+
+.poster-img {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.poster-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.poster-text {
+    background-color: #111;
+    opacity: 0.5;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.player {
+    width: 100%;
+    height: 100%;
+}
+
+.player h2 {
+    font-family: 'abril';
+    font-size: 40px;
+    color: #C9CEBD;
+    justify-content: center;
+}
+
+
+
+/* Estilos del footer */
+
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #88303e;
     color: #fffffa;
-    padding: 10px;
+    height: 100vh;
+    font-size: 15px;
+    height: 150px;
+}
+
+.footer-content {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    justify-content: space-around;
 }
