@@ -218,7 +218,7 @@ h1 {
 
 /* Estilos del banner */
 
-.banner h2 {
+.banner {
     font-family: "abril";
     color: #C9CEBD;
     font-size: 60px;
@@ -315,6 +315,7 @@ h1 {
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .player {
@@ -347,6 +348,14 @@ footer {
     gap: 20px;
     padding: 40px;
     justify-content: space-around;
+}
+
+.footer-content a {
+    padding: 5px;
+    text-decoration: none;
+    color: #C9CEBD ;
+    font-size: 14px;
+    border: 2px solid #0c181d;
 }
 
 /* Estilos de la galería */
@@ -507,13 +516,14 @@ footer {
     display: flex;
     flex-direction: column;
     width: 320px;
-    padding: 0;
+    padding: 10px;
     margin: 0;
     background-color: #4a242e9a;
     border: 2px solid #88303E;
     border-radius: 8px;
     color: #C9CEBD;
     text-align: center;
+    align-items: center;
     gap: 5px;
 }
 
@@ -522,3 +532,33 @@ footer {
     font-size: 28px;
     justify-self: flex-start;
 }
+
+/* Estilos de Contacto */
+
+.form-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.data-form {
+    width: 48%;
+    display: flex; 
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.map {
+    height: 100%;
+    width: 100%;
+}
+
+.contact-extras {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Estilos del Info */
+
